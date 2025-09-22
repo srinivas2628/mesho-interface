@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flipkart Login</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<div class="login-container">
+    <h2>Flipkart Login</h2>
+    <form action="/submit-login" method="POST" onsubmit="return validateForm()">
+        <div class="input-group">
+            <label for="email">Email / Phone</label>
+            <input type="text" id="email" name="email" placeholder="Enter your email or phone number" required>
+        </div>
+        <div class="input-group">
+            <label for="password">Password</label>
+            <input type="password" id="password" name="password" placeholder="Enter your password" required>
+        </div>
+        <div class="remember-me">
+            <input type="checkbox" id="remember">
+            <label for="remember">Remember me</label>
+        </div>
+        <button type="submit">Login</button>
+    </form>
+
+    <div class="other-links">
+        <p><a href="#">Forgot Password?</a></p>
+        <p>New to Flipkart? <a href="#">Create an account</a></p>
+    </div>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
